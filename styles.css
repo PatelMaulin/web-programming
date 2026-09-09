@@ -1,0 +1,173 @@
+/*
+COLOR PALETTE - a simple black, white, and gray design
+#FFFFFF - White: page background.
+#000000 - Black: headings, navigation links, borders, and keyboard focus.
+#333333 - Dark gray: main paragraph text and business link.
+#595959 - Medium gray: subtitle, site label, and footer text.
+#F2F2F2 - Light gray: background of the Find Me Online section.
+
+FONT PALETTE
+Arial, sans-serif - Main page text and navigation.
+Georgia, serif - Headings and the original first-paragraph style.
+Verdana, sans-serif - The original second-paragraph style.
+"Courier New", monospace - The original third-paragraph style.
+*/
+
+/* Apply the palette's background and text colors to every page. */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Keep the layout simple and readable on large and small screens. */
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Use a serif font and black text for the headings. */
+h1,
+h2 {
+    font-family: Georgia, serif;
+    color: #000000;
+    line-height: 1.25;
+}
+
+/* Separate the header from the rest of the page. */
+header {
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 16px;
+}
+
+/* Space the navigation links and keep them within the color palette. */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #000000;
+}
+
+/* Show visitors which page they are currently viewing. */
+nav a[aria-current="page"] {
+    font-weight: bold;
+}
+
+/* Keep every link underlined so it is easy to recognize. */
+a {
+    color: #333333;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Make links easier to follow with a mouse or keyboard. */
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+    outline: 2px solid #000000;
+    outline-offset: 4px;
+}
+
+/* Preserve the original images and resize them with the screen. */
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #000000;
+}
+
+/* Preserve the original first paragraph's serif font. */
+.paragraph-one {
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+/* Preserve the original second paragraph's bold sans-serif font. */
+.paragraph-two {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Preserve the original third paragraph's italic monospace font. */
+.paragraph-three {
+    font-family: "Courier New", monospace;
+    font-size: 17px;
+    font-style: italic;
+}
+
+/* Keep the original table readable without adding bright colors. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Use gray text for the About page's small introductory labels. */
+.site-label,
+.subtitle {
+    color: #595959;
+}
+
+.site-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+/* Give the About page a clear title and comfortable paragraph spacing. */
+.about-page h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.about-page h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-page section {
+    margin-bottom: 28px;
+}
+
+.about-page section p {
+    margin: 0;
+}
+
+/* Use the light gray palette color to highlight the business link. */
+.online-links {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-left: 3px solid #000000;
+}
+
+.online-links h2 {
+    margin-top: 0;
+}
+
+/* Finish each page with a simple footer. */
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    text-align: center;
+    color: #595959;
+    font-size: 14px;
+}

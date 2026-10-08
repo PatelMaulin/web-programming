@@ -1,89 +1,89 @@
 <!DOCTYPE html>
+<!--
+  index.html
+  Author: Maulin Patel
+  Purpose: Personal portfolio page with a light/dark theme switch.
+  The colors live in CSS variables (style.css) and the theme is
+  toggled and saved with vanilla JavaScript (script.js), following
+  codedgar's "dark theme system in 5 minutes" technique.
+-->
 <html lang="en">
 <head>
-    <!-- This section contains the page title and connects the CSS file -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <!-- Basic page settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maulin Patel | Portfolio</title>
+
+  <!-- External stylesheet that holds all the theme variables -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Main page container -->
-    <div class="container">
 
-        <!-- Header section -->
-        <header>
-            <h1>Cricket</h1>
-        </header>
+<!-- The "default" class is the light theme. JS swaps it for "dark_mode". -->
+<body class="default">
 
-        <!-- Relative navigation links to all four pages -->
-        <nav aria-label="Main navigation">
-            <a href="index.html" aria-current="page">Home</a><br>
-            <a href="history.html">History</a><br>
-            <a href="players.html">Players</a><br>
-            <a href="about.html">About</a>
-        </nav>
+  <!-- ===== Header / navigation ===== -->
+  <header class="site-header">
+    <h1 class="logo">Maulin Patel</h1>
 
-        <!-- Cricket image -->
-        <img class="hero-image" src="images/cricket_match.svg" alt="Cricket match image">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <!-- First paragraph -->
-        <p class="paragraph-one">
-            Cricket is a sport played between two teams of eleven players. It is played
-            with a bat and ball on a large field. The main goal is to score more runs than
-            the other team.
-        </p>
+    <!-- Theme toggle button. script.js listens for clicks on this id. -->
+    <button id="theme_toggler" aria-label="Switch color theme">
+      🌙 Dark mode
+    </button>
+  </header>
 
-        <!-- Second paragraph -->
-        <p class="paragraph-two">
-            The game has batting, bowling, and fielding. A batter tries to hit the ball and
-            score runs. A bowler tries to get the batter out.
-        </p>
+  <main>
+    <!-- ===== About section ===== -->
+    <section id="about" class="card">
+      <h2>About me</h2>
+      <p>
+        I'm a Computer Science student at Georgia State University in Atlanta.
+        I'm interested in software engineering and data analytics, and I also
+        help run an LED lighting business, where I build tools to automate
+        inventory and reordering.
+      </p>
+    </section>
 
-        <!-- Third paragraph -->
-        <p class="paragraph-three">
-            Cricket is very popular in countries such as India, England, Australia, Pakistan,
-            South Africa, Sri Lanka, and New Zealand.
-        </p>
+    <!-- ===== Projects section ===== -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <!-- Each list item is one project -->
+        <li>
+          <h3>Inventory Dashboard</h3>
+          <p>A browser-based dashboard that tracks stock and flags items to reorder.</p>
+        </li>
+        <li>
+          <h3>Reorder-Point Analysis</h3>
+          <p>Forecasting how much inventory to keep on hand using past sales data.</p>
+        </li>
+        <li>
+          <h3>Theme Switcher</h3>
+          <p>This page! Light and dark themes built with CSS variables and vanilla JS.</p>
+        </li>
+      </ul>
+    </section>
 
-        <!-- Bulleted list section -->
-        <h2>Basic Cricket Facts</h2>
-        <ul>
-            <li>Each team normally has eleven players.</li>
-            <li>Batters score runs.</li>
-            <li>Bowlers try to take wickets.</li>
-            <li>Cricket has different match formats.</li>
-        </ul>
+    <!-- ===== Contact section ===== -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Want to work together? Send me a message.</p>
+      <!-- Accent-colored button; its color also changes with the theme -->
+      <a class="button" href="mailto:youremail@example.com">Email me</a>
+    </section>
+  </main>
 
-        <!-- Table section -->
-        <h2>Cricket Formats</h2>
-        <table>
-            <tr>
-                <th>Format</th>
-                <th>Length</th>
-                <th>Overs</th>
-            </tr>
-            <tr>
-                <td>Test</td>
-                <td>Up to 5 days</td>
-                <td>No fixed limit</td>
-            </tr>
-            <tr>
-                <td>ODI</td>
-                <td>1 day</td>
-                <td>50 overs</td>
-            </tr>
-            <tr>
-                <td>T20</td>
-                <td>About 3 hours</td>
-                <td>20 overs</td>
-            </tr>
-        </table>
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Maulin Patel</p>
+  </footer>
 
-        <!-- Footer section -->
-        <footer>
-            Cricket Website Assignment
-        </footer>
-    </div>
+  <!-- Load the script last so the button already exists when JS runs -->
+  <script src="script.js"></script>
 </body>
 </html>

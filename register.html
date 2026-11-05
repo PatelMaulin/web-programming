@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Register</title><link rel="stylesheet" href="style.css"></head>
+<body><main><h1>Register</h1>
+  <!-- Names match the fields expected by the server's /signup route. -->
+  <form method="POST" action="/signup">
+    <label for="userName">Username</label><input id="userName" name="userName" required>
+    <label for="fname">First name</label><input id="fname" name="fname" required>
+    <label for="lname">Last name</label><input id="lname" name="lname" required>
+    <label for="gpa">GPA</label><input id="gpa" name="gpa" type="number" min="0" max="4" step="0.01" required>
+    <label for="password">Password</label><input id="password" name="password" type="password" required>
+    <button type="submit">Register</button>
+  </form><p><a href="/login.html">Already have an account? Login</a></p>
+</main></body></html>

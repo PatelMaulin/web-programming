@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Shared semantic layout and external assets for the cricket project. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore cricket, learn the rules, and build your own cricket club profile."
+    />
+    <title>Login | The Cricket Club</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="index.html"
+        >THE CRICKET CLUB<span>BY MAULIN PATEL</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="history.html">History</a
+        ><a href="players.html">Players</a><a href="learn.html">Learn</a
+        ><a href="about.html">About</a><a href="profile">My club</a>
+      </nav>
+      <button id="theme_toggler" type="button">Dark mode</button>
+    </header>
+    <main id="main">
+      <section class="auth panel">
+        <p class="eyebrow">YOUR PLACE IN THE CLUB</p>
+        <h1>Welcome back.</h1>
+        <p>Sign in to your cricket profile.</p>
+        <form action="/login" method="post">
+          <label for="username">Username</label
+          ><input
+            id="username"
+            name="username"
+            minlength="3"
+            maxlength="30"
+            pattern="[A-Za-z0-9_]+"
+            autocomplete="username"
+            required
+          /><label for="password">Password</label
+          ><input
+            id="password"
+            name="password"
+            type="password"
+            minlength="8"
+            maxlength="128"
+            autocomplete="current-password"
+            required
+          /><button>Login</button>
+        </form>
+        <p><a href="register.html">New here? Create an account</a></p>
+      </section>
+    </main>
+    <footer>
+      <b>The Cricket Club</b
+      ><span>Created by Maulin Patel · Web Programming · 2026</span
+      ><a href="about.html">About the project ↗</a>
+    </footer>
+  </body>
+</html>

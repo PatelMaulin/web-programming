@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- Shared semantic layout and external assets for the cricket project. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore cricket, learn the rules, and build your own cricket club profile."
+    />
+    <title>Learn | The Cricket Club</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="index.html"
+        >THE CRICKET CLUB<span>BY MAULIN PATEL</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="history.html">History</a
+        ><a href="players.html">Players</a><a href="learn.html">Learn</a
+        ><a href="about.html">About</a><a href="profile">My club</a>
+      </nav>
+      <button id="theme_toggler" type="button">Dark mode</button>
+    </header>
+    <main id="main">
+      <p class="eyebrow">03 / THE BASICS</p>
+      <h1>Welcome to<br />your first innings.</h1>
+      <div class="grid">
+        <article class="card">
+          <h2>Score runs</h2>
+          <p>
+            Batters score by running between the wickets or hitting boundaries.
+            A ball reaching the boundary after touching the ground scores four;
+            clearing it without bouncing scores six.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Take wickets</h2>
+          <p>
+            The fielding side tries to dismiss batters. Common dismissals
+            include bowled, caught, leg before wicket, and run out.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Count overs</h2>
+          <p>
+            An over contains six legal deliveries. Wides and no-balls add extras
+            and must be bowled again.
+          </p>
+        </article>
+      </div>
+      <section class="panel">
+        <p class="eyebrow">CHECK YOUR CRICKET IQ</p>
+        <h2>A quick warm-up.</h2>
+        <form id="quiz">
+          <fieldset>
+            <legend>How many legal deliveries are in an over?</legend>
+            <label
+              ><input type="radio" name="answer" value="4" required />
+              Four</label
+            ><label><input type="radio" name="answer" value="6" /> Six</label
+            ><label><input type="radio" name="answer" value="8" /> Eight</label>
+          </fieldset>
+          <button>Check answer</button>
+        </form>
+        <p id="quiz-result" role="status"></p>
+      </section>
+      <p>
+        Explore the official
+        <a href="https://www.lords.org/mcc/the-laws-of-cricket"
+          >MCC Laws of Cricket</a
+        >
+        for the complete rules.
+      </p>
+    </main>
+    <footer>
+      <b>The Cricket Club</b
+      ><span>Created by Maulin Patel · Web Programming · 2026</span
+      ><a href="about.html">About the project ↗</a>
+    </footer>
+  </body>
+</html>

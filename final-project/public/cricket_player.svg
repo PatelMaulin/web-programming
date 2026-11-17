@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+<!-- Simple black and white cricket player image -->
+<rect width="700" height="350" fill="white"/>
+<rect x="1" y="1" width="698" height="348" fill="none" stroke="black"/>
+<text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="28" fill="black">Cricket Player</text>
+<circle cx="350" cy="120" r="30" fill="white" stroke="black" stroke-width="3"/>
+<line x1="350" y1="150" x2="350" y2="235" stroke="black" stroke-width="8"/>
+<line x1="350" y1="175" x2="300" y2="220" stroke="black" stroke-width="6"/>
+<line x1="350" y1="175" x2="405" y2="135" stroke="black" stroke-width="6"/>
+<line x1="350" y1="235" x2="320" y2="300" stroke="black" stroke-width="8"/>
+<line x1="350" y1="235" x2="385" y2="300" stroke="black" stroke-width="8"/>
+<rect x="400" y="90" width="10" height="140" fill="white" stroke="black" stroke-width="3" transform="rotate(-20 405 160)"/>
+<circle cx="455" cy="155" r="8" fill="black"/>
+</svg>
